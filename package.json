@@ -1,0 +1,24 @@
+{
+  "name": "formvoltron",
+  "version": "1.0.0",
+  "description": "A custom react hook for forms",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sweatercomeback/formvoltron.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "form"
+  ],
+  "author": "Ship B, LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sweatercomeback/formvoltron/issues"
+  },
+  "homepage": "https://github.com/sweatercomeback/formvoltron#readme"
+}
