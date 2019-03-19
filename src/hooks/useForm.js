@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-console.log("here3 ");
 
 const useForm = (callback, validate) => {
-  console.log("or here3");
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
   const [isDirty, setIsDirty] = useState(false);
