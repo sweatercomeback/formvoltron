@@ -1,10 +1,15 @@
 {
-  "name": "formvoltron",
-  "version": "1.0.0",
+  "name": "@shipb/formvoltron",
+  "version": "0.0.3",
   "description": "A custom react hook for forms",
-  "main": "index.js",
+  "main": "dist/formvoltron.js",
+  "umd:main": "dist/formvoltron.umd.js",
+  "module": "dist/formvoltron.m.js",
+  "source": "src/index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "build": "microbundle -o dist/ --sourcemap false --compress false",
+    "dev": "microbundle watch -o dist/ --sourcemap false --compress false"
   },
   "repository": {
     "type": "git",
@@ -20,5 +25,27 @@
   "bugs": {
     "url": "https://github.com/sweatercomeback/formvoltron/issues"
   },
-  "homepage": "https://github.com/sweatercomeback/formvoltron#readme"
+  "homepage": "https://github.com/sweatercomeback/formvoltron#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-hooks": "next",
+    "microbundle": "^0.11.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-testing-library": "^5.9.0",
+    "regenerator-runtime": "^0.13.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  }
 }
