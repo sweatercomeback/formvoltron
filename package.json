@@ -1,6 +1,6 @@
 {
   "name": "@shipb/formvoltron",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "A custom react hook for forms",
   "main": "dist/formvoltron.js",
   "umd:main": "dist/formvoltron.umd.js",
