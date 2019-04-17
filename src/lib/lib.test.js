@@ -1,5 +1,4 @@
-import { AssertionError } from "assert";
-import { hasValues } from "./useForm";
+import { hasValues } from "./";
 
 describe("hasValue determines if there are values", function() {
   it("determines no values", function() {
@@ -28,6 +27,10 @@ describe("hasValue determines if there are values", function() {
   });
   it("handles boolean values", function() {
     const target = hasValues({ isTrue: false });
+    expect(target).toEqual(true);
+  });
+  it("handles date values", function() {
+    const target = hasValues({ aDate: new Date() });
     expect(target).toEqual(true);
   });
 });

@@ -1,13 +1,13 @@
 {
   "name": "@shipb/formvoltron",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A custom react hook for forms",
   "main": "dist/formvoltron.js",
   "umd:main": "dist/formvoltron.umd.js",
   "module": "dist/formvoltron.m.js",
   "source": "src/index.js",
   "scripts": {
-    "test": "npm run test",
+    "test": "jest",
     "build": "microbundle -o dist/ --sourcemap false --compress false",
     "dev": "microbundle watch -o dist/ --sourcemap false --compress false"
   },
@@ -39,6 +39,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-react-hooks": "next",
+    "jest": "^24.7.1",
     "microbundle": "^0.11.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",

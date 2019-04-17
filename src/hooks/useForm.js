@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { hasValues } from "../lib";
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({});
@@ -16,10 +17,8 @@ const useForm = (callback, validate) => {
 
   useEffect(() => {
     if (Object.keys(values).length > 0) {
-      const hasValues = Object.values(values).reduce((hasValue, v) => {
-        return hasValue || (v && v.length > 0);
-      }, false);
-      setIsDirty(hasValues);
+      const hasValue = hasValues(values);
+      setIsDirty(hasValue);
     }
   }, [values]);
 
