@@ -16,10 +16,8 @@ const useForm = (callback, validate) => {
   }, [errors]);
 
   useEffect(() => {
-    if (Object.keys(values).length > 0) {
-      const hasValue = hasValues(values);
-      setIsDirty(hasValue);
-    }
+    const hasValue = hasValues(values);
+    setIsDirty(hasValue);
   }, [values]);
 
   const handleSubmit = event => {

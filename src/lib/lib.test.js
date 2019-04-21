@@ -1,35 +1,43 @@
 import { hasValues } from "./";
 
-describe("hasValue determines if there are values", function() {
-  it("determines no values", function() {
+describe("hasValue determines if there are values", function () {
+  it("handles null", function () {
+    const target = hasValues(null);
+    expect(target).toEqual(false);
+  });
+  it("handles undefined", function () {
+    const target = hasValues(undefined);
+    expect(target).toEqual(false);
+  });
+  it("determines no values", function () {
     const target = hasValues({});
     expect(target).toEqual(false);
   });
-  it("determines no values if key is undefined", function() {
+  it("determines no values if key is undefined", function () {
     const target = hasValues({ key1: undefined });
     expect(target).toEqual(false);
   });
-  it("determines no values if key is null", function() {
+  it("determines no values if key is null", function () {
     const target = hasValues({ key1: null });
     expect(target).toEqual(false);
   });
-  it("determines no values if key is empty string", function() {
+  it("determines no values if key is empty string", function () {
     const target = hasValues({ key1: "" });
     expect(target).toEqual(false);
   });
-  it("handles string values", function() {
+  it("handles string values", function () {
     const target = hasValues({ value1: "test" });
     expect(target).toEqual(true);
   });
-  it("handles date values", function() {
+  it("handles date values", function () {
     const target = hasValues({ currentDate: new Date() });
     expect(target).toEqual(true);
   });
-  it("handles boolean values", function() {
+  it("handles boolean values", function () {
     const target = hasValues({ isTrue: false });
     expect(target).toEqual(true);
   });
-  it("handles date values", function() {
+  it("handles date values", function () {
     const target = hasValues({ aDate: new Date() });
     expect(target).toEqual(true);
   });
