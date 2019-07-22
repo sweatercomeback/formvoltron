@@ -27,26 +27,28 @@
   },
   "homepage": "https://github.com/sweatercomeback/formvoltron#readme",
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/polyfill": "^7.2.5",
-    "@babel/preset-env": "^7.2.3",
+    "@babel/core": "^7.5.5",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.7.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2",
     "eslint-plugin-react-hooks": "next",
-    "jest": "^24.7.1",
-    "microbundle": "^0.11.0",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
+    "jest": "^24.8.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-testing-library": "^5.9.0",
-    "regenerator-runtime": "^0.13.1"
+    "regenerator-runtime": "^0.13.3"
   },
   "peerDependencies": {
     "react": "^16.8.0"
+  },
+  "dependencies": {
+    "microbundle": "^0.11.0"
   }
 }
